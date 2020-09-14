@@ -63,7 +63,7 @@ def insert(nome, sobrenome, email, cpf):
 def search(nome ="", sobrenome ="", email ="", cpf =""):
     trans = TransactionObject()
     trans.connect()
-    trans.execute("SELECT * FROM clientes WHERE nome=? or sobrenome=? or email=? of cpf=?", (nome, sobrenome, email, cpf))
+    trans.execute("SELECT * FROM clientes WHERE nome=? or sobrenome=? or email=? or cpf=?", (nome, sobrenome, email, cpf))
     rows = trans.fetchall()
     trans.disconnect()
     return rows

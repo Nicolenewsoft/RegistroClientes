@@ -22,7 +22,7 @@ class Gui():
     lblnome = Label(window, text="Nome")
     lblsobrenome = Label(window, text="Sobrenome")
     lblemail = Label(window, text="Email")
-    lblcpf = Label(window, text="CPF")
+    lblcpf = Label(window, text="Cpf")
     
     entNome = Entry(window, textvariable=txtNome)
     entSobrenome = Entry(window, textvariable=txtSobrenome)
